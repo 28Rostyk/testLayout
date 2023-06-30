@@ -114,10 +114,18 @@
 
     cursor: pointer;
 
+    transition: all var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      border: 1px solid #df0404;
+      background: #ffc5c5;
+      color: #df0404;
+    }
+
     &--active {
       border: 1px solid #df0404;
       background: #ffc5c5;
-
       color: #df0404;
     }
   }
@@ -191,6 +199,15 @@ td:nth-child(5) {
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.12px;
+
+    transition: all var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      border: 1px solid #5932ea;
+      background: #5932ea;
+    }
 
     &.active {
       color: #fff;

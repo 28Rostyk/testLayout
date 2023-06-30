@@ -1040,10 +1040,6 @@ const refs = {
   paginationContainer: document.querySelector('.pagination'),
 };
 
-// console.log(refs.tableBtn);
-
-// const menuButton = document.querySelector('.menu__btn');
-
 refs.btn.addEventListener('click', function () {
   refs.btn.classList.toggle('menu__btn--active');
   refs.sideBar.classList.toggle('side-bar--active');
@@ -1084,7 +1080,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Функція для створення розмітки сторінок та вмісту
-// const totalPages = Math.ceil(items.length / itemsPerPage); // Загальна кількість сторінок
 
 function renderTable() {
   const start = (currentPage - 1) * itemsPerPage;
