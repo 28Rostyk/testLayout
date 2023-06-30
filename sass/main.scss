@@ -1,6 +1,9 @@
 @import './utils/veriables';
-// @import './utils/placeholders';
+@import './utils/placeholders';
 @import './utils/mixins';
 
 @import './base/common';
 @import './base/container';
+
+@import './layout/side-bar';
+@import './layout/customers';
