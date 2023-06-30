@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-font-family: "Poppins", sans-serif;
   --font-waight-medium: 500;
@@ -66,10 +67,16 @@ img {
   display: flex;
   -moz-column-gap: 57px;
        column-gap: 57px;
+  max-width: 1440px; /* Максимальна ширина контейнера */
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 .menu__btn {
   display: none;
 }
@@ -149,7 +156,7 @@ img {
 }
 .user-wrapper::before {
   content: "";
-  background-image: url(../../images/avatar.jpg);
+  background-image: url(../images/avatar.jpg);
   width: 42px;
   height: 42px;
   position: absolute;
