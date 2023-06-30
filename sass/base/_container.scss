@@ -1,14 +1,19 @@
 .container {
-  display: flex;
-  column-gap: 57px;
-  max-width: 1440px; /* Максимальна ширина контейнера */
+  max-width: 1400px; /* Максимальна ширина контейнера */
   // margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 768px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 480px;
   }
 }
